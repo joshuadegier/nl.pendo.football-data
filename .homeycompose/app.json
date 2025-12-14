@@ -37,5 +37,12 @@
       "path": "/search"
     }
   },
-  "brandColor": "#1A1819"
+  "brandColor": "#1A1819",
+  "homeyCommunityTopicId": 146908,
+  "source": "https://github.com/joshuadegier/nl.pendo.football-data",
+  "issues": "https://github.com/joshuadegier/nl.pendo.football-data/issues",
+  "homepage": "https://pendo.nl",
+  "bugs": {
+    "url": "https://github.com/joshuadegier/nl.pendo.football-data/issues"
+  }
 }
