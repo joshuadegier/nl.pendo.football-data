@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.pendo.football-data",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "platforms": [
@@ -12,8 +12,8 @@
     "nl": "Voetbal Data"
   },
   "description": {
-    "en": "Automate your home based on football match events. Track your favorite teams and trigger flows when matches start, goals are scored, or results come in.",
-    "nl": "Automatiseer je huis op basis van voetbalwedstrijden. Volg je favoriete teams en trigger flows wanneer wedstrijden beginnen, er gescoord wordt, of de uitslag bekend is."
+    "en": "Let your home celebrate every goal with you!",
+    "nl": "Laat je huis ieder doelpunt met je meevieren!"
   },
   "category": [
     "internet"
