@@ -13,5 +13,8 @@
   },
   "1.0.4": {
     "en": "Updates images, icons and description"
+  },
+  "1.0.5": {
+    "en": "Added football-data.org logo as app icon"
   }
 }
