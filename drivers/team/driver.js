@@ -117,12 +117,22 @@ class TeamDriver extends Homey.Driver {
         const isHome = nextMatch.homeTeam.id === Number(device.teamId);
         const opponent = isHome ? nextMatch.awayTeam : nextMatch.homeTeam;
         const matchDate = new Date(nextMatch.utcDate);
+        const timezone = this.homey.clock.getTimezone();
         const daysUntil = Math.ceil((matchDate - new Date()) / 1000 / 60 / 60 / 24);
+
+        // Format date in Homey timezone (yyyy-mm-dd)
+        const dateStr = matchDate.toLocaleDateString('en-CA', { timeZone: timezone });
+        // Format time in Homey timezone
+        const timeStr = matchDate.toLocaleTimeString('nl-NL', {
+          hour: '2-digit',
+          minute: '2-digit',
+          timeZone: timezone,
+        });
 
         return {
           opponent: opponent.shortName || opponent.name,
-          date: matchDate.toISOString().split('T')[0],
-          time: matchDate.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' }),
+          date: dateStr,
+          time: timeStr,
           competition: nextMatch.competition?.name || '',
           venue: isHome ? 'Home' : 'Away',
           is_home: isHome,
