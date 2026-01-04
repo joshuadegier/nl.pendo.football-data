@@ -28,5 +28,8 @@
   },
   "1.0.9": {
     "en": "Used Homey timezone to parse match dates"
+  },
+  "1.0.10": {
+    "en": "Fixed a bug where the fetch match data card would return the date and time in UTC instead of the correct timezone"
   }
 }
